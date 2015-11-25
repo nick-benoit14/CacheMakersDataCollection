@@ -1,0 +1,19 @@
+//These are all the weather values that wunderground expects:
+int winddir = 0; // [0-360 instantaneous wind direction]
+float windspeedmph = 0; // [mph instantaneous wind speed]
+float windgustmph = 0; // [mph current wind gust, using software specific time period]
+int windgustdir = 0; // [0-360 using software specific time period]
+float windspdmph_avg2m = 0; // [mph 2 minute average wind speed mph]
+int winddir_avg2m = 0; // [0-360 2 minute average wind direction]
+float windgustmph_10m = 0; // [mph past 10 minutes wind gust mph ]
+int windgustdir_10m = 0; // [0-360 past 10 minutes wind gust direction]
+float humidity = 0; // [%]
+float tempf = 0; // [temperature F]
+float rainin = 0; // [rain inches over the past hour)] -- the accumulated rainfall in the past 60 min
+volatile float dailyrainin = 0; // [rain inches so far today in local time]
+//float baromin = 30.03;// [barom in] - It's hard to calculate baromin locally, do this in the agent
+float pressure = 0;
+//float dewptf; // [dewpoint F] - It's hard to calculate dewpoint locally, do this in the agent
+
+float batt_lvl = 11.8; //[analog value from 0 to 1023]
+float light_lvl = 455; //[analog value from 0 to 1023]
