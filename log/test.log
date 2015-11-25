@@ -32,3 +32,17 @@ Processing by DataVisController#home as HTML
   Rendered data_vis/home.html.erb within layouts/application (2.5ms)
 Completed 200 OK in 245ms (Views: 244.2ms | ActiveRecord: 0.0ms)
   [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "data_points"[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO "data_points" ("data", "created_at", "updated_at", "id") VALUES ('MyString', '2015-11-25 23:14:24', '2015-11-25 23:14:24', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "data_points" ("data", "created_at", "updated_at", "id") VALUES ('MyString', '2015-11-25 23:14:24', '2015-11-25 23:14:24', 298486374)[0m
+  [1m[35m (104.1ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+-------------------------------------------
+DataVisControllerTest: test_should_get_home
+-------------------------------------------
+Processing by DataVisController#home as HTML
+  Rendered data_vis/home.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 411ms (Views: 410.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
