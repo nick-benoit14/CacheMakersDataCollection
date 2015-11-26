@@ -17,3 +17,23 @@ float pressure = 0;
 
 float batt_lvl = 11.8; //[analog value from 0 to 1023]
 float light_lvl = 455; //[analog value from 0 to 1023]
+
+
+
+/*	{'Data':{
+  'winddir':
+  'windspeedmph':
+  'windgustmph':
+  'windgustdir':
+  'windspdmph_avg2m':
+  'winddir_avg2m':
+  'windgustmph_10m':
+  'windgustdir_10m':
+  'humidity':
+  'tempf':
+  'rainin':
+  'dailyrainin':
+  'pressure':
+  'light_lvl':
+  }
+}
