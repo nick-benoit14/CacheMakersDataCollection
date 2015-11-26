@@ -1,5 +1,9 @@
+
 <h1>DataVis#home</h1>
-<p>Find me in app/views/data_vis/home.html.erb</p>
-<% @datapoints.each do |data| %>
-    <div><%= data %></div>
+<%= content_tag "div", id:"weatherdata", data:{'weatherdata':DataPoint.all} do %>
 <% end %>
+<ol>
+<% @datapoints.each do |data| %>
+    <li><%= data.data %></li>
+<% end %>
+</ol>
