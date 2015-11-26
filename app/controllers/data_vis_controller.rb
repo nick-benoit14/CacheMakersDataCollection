@@ -1,4 +1,12 @@
 class DataVisController < ApplicationController
-  def home
+
+  def index
+    #@datapoints = DataPoint.all
   end
+
+  def home
+      @datapoints = DataPoint.all
+  end
+
+
 end
