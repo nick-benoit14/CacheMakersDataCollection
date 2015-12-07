@@ -1,3 +1,13 @@
+To run start test server, then start weather server
+
+
+//TODO:
+  Write Tests
+  Start on visualization
+  
+
+
+
 //These are all the weather values that wunderground expects:
 int winddir = 0; // [0-360 instantaneous wind direction]
 float windspeedmph = 0; // [mph instantaneous wind speed]

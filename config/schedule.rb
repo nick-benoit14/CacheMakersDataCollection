@@ -23,4 +23,5 @@ set :environment, 'development'
 
 every 2.minutes do
   runner 'DataPoint.new.FetchData'
+
 end
