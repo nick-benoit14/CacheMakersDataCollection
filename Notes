@@ -1,5 +1,7 @@
 //TODO:
   Write Cron Job Tests
+  Create WeatherStationData model, one string field for each datapoint
+  Add NvD3 Cumulative Lines graph
 
 
 
