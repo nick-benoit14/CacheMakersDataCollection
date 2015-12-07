@@ -1,7 +1,10 @@
 class DataVisController < ApplicationController
 
   def home
-      @datapoints = DataPoint.all
+  end
+
+  def weather_station
+    @datapoints = DataPoint.all
   end
 
 

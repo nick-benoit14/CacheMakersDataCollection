@@ -1,4 +1,8 @@
-//These are all the weather values that wunderground expects:
+//TODO:
+  Write Cron Job Tests
+
+
+
 int winddir = 0; // [0-360 instantaneous wind direction]
 float windspeedmph = 0; // [mph instantaneous wind speed]
 float windgustmph = 0; // [mph current wind gust, using software specific time period]

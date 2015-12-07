@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'data_vis/home'
+  get 'data_vis/weather_station'
 
   root 'data_vis#home'
 
