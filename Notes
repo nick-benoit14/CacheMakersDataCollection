@@ -1,6 +1,26 @@
+int winddir,
+float windspeedmph,
+
+int winddir_avg2m,
+float windspdmph_avg2m,
+int windgustdir_10m,
+float windgustmph_10m,
+
+int windgustdir,
+float windgustmph,
+
+float humidity,
+float tempf,
+float rainin,
+float dailyrainin,
+float pressure,
+
+
+
+
 //TODO:
   Write Cron Job Tests
-  Create WeatherStationData model, one string field for each datapoint
+  Create WeatherStationData model
   Add NvD3 Cumulative Lines graph
 
 
