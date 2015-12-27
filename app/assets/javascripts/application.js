@@ -17,4 +17,5 @@
 
 $(document).ready(function(){
   console.log($('#weatherdata').data('weatherdata'));
+  console.log(window.Data);
 });

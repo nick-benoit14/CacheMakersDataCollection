@@ -4,7 +4,7 @@ class DataVisController < ApplicationController
   end
 
   def weather_station
-    @datapoints = DataPoint.all
+    @datapoints = WeatherDatum.all
   end
 
 
