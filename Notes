@@ -1,29 +1,13 @@
-int winddir,
-float windspeedmph,
-
-int winddir_avg2m,
-float windspdmph_avg2m,
-int windgustdir_10m,
-float windgustmph_10m,
-
-int windgustdir,
-float windgustmph,
-
-float humidity,
-float tempf,
-float rainin,
-float dailyrainin,
-float pressure,
-
-
+Log:
+  12/27/15 - Added WeatherDatum controller
 
 
 //TODO:
-  Write Cron Job Tests
-  Create WeatherStationData model
+  Add post method to weather satation
   Add NvD3 Cumulative Lines graph
 
 
+//Data Fields
 
 int winddir = 0; // [0-360 instantaneous wind direction]
 float windspeedmph = 0; // [mph instantaneous wind speed]
@@ -43,6 +27,23 @@ float pressure = 0;
 
 float batt_lvl = 11.8; //[analog value from 0 to 1023]
 float light_lvl = 455; //[analog value from 0 to 1023]
+
+int winddir,
+float windspeedmph,
+
+int winddir_avg2m,
+float windspdmph_avg2m,
+int windgustdir_10m,
+float windgustmph_10m,
+
+int windgustdir,
+float windgustmph,
+
+float humidity,
+float tempf,
+float rainin,
+float dailyrainin,
+float pressure,
 
 
 

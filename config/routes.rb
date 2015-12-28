@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
-  get 'data_vis/home'
-  get 'data_vis/weather_station'
+
+  get 'weather_datum/new'
 
   root 'data_vis#home'
+
+
+  resources :weather_datum
+
+  get '/home' => 'data_vis#home'
+  get '/weather_station' => 'data_vis#weather_station'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
