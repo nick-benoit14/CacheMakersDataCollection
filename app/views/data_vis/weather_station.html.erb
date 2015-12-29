@@ -1,5 +1,12 @@
 
-<%= content_tag "div", id:"weatherdata", data:{'weatherdata':@datapoints} do %>
+
+
+
+<%= content_tag "div", id:"weatherdata", data:{"weatherdata":[
+  {"key":"windDir","values":[@time, @wind_dir]}
+
+    ]
+  } do %>
 <% end %>
 
 <h1>Cache Makers Weather Station</h1>

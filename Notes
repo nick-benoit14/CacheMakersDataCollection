@@ -1,9 +1,9 @@
 Log:
   12/27/15 - Added WeatherDatum controller
-
+           - Add post method to weather satation
 
 //TODO:
-  Add post method to weather satation
+
   Add NvD3 Cumulative Lines graph
 
 

@@ -8,6 +8,7 @@ class WeatherDatumController < ApplicationController
   end
 
   def index
+    render :json => WeatherDatum.all
   end
 
   def create
