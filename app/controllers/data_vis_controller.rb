@@ -5,20 +5,20 @@ class DataVisController < ApplicationController
 
   def weather_station
     @all_data = WeatherDatum.all
-    @time = WeatherDatum.pluck(:created_at)
-    @wind_dir = WeatherDatum.pluck(:windDir)
-    @wind_speed_mph = WeatherDatum.pluck(:windSpeedMph)
-    @two_min_wind_dir = WeatherDatum.pluck(:twoMinWindDir)
-    @two_min_wind_speed = WeatherDatum.pluck(:twoMinWindSpeed)
-    @ten_min_wind_dir = WeatherDatum.pluck(:twoMinWindDir)
-    @ten_min_wind_speed = WeatherDatum.pluck(:tenMinWindSpeed)
-    @wind_gust_dir = WeatherDatum.pluck(:windGustDir)
-    @wind_gust_mph = WeatherDatum.pluck(:windGustMph)
-    @humidity = WeatherDatum.pluck(:humidity)
-    @tempf = WeatherDatum.pluck(:tempf)
-    @rain = WeatherDatum.pluck(:rain)
-    @dailyRain = WeatherDatum.pluck(:dailyRain)
-    @pressure = WeatherDatum.pluck(:pressure)
+    @time = WeatherDatum.where(created_at: (Time.now - 1.day)..Time.now).pluck(:created_at)
+    @wind_dir = WeatherDatum.where(created_at: (Time.now - 1.day)..Time.now).pluck(:windDir)
+    @wind_speed_mph = WeatherDatum.where(created_at: (Time.now - 1.day)..Time.now).pluck(:windSpeedMph)
+    @two_min_wind_dir = WeatherDatum.where(created_at: (Time.now - 1.day)..Time.now).pluck(:twoMinWindDir)
+    @two_min_wind_speed = WeatherDatum.where(created_at: (Time.now - 1.day)..Time.now).pluck(:twoMinWindSpeed)
+    @ten_min_wind_dir = WeatherDatum.where(created_at: (Time.now - 1.day)..Time.now).pluck(:twoMinWindDir)
+    @ten_min_wind_speed = WeatherDatum.where(created_at: (Time.now - 1.day)..Time.now).pluck(:tenMinWindSpeed)
+    @wind_gust_dir = WeatherDatum.where(created_at: (Time.now - 1.day)..Time.now).pluck(:windGustDir)
+    @wind_gust_mph = WeatherDatum.where(created_at: (Time.now - 1.day)..Time.now).pluck(:windGustMph)
+    @humidity = WeatherDatum.where(created_at: (Time.now - 1.day)..Time.now).pluck(:humidity)
+    @tempf = WeatherDatum.where(created_at: (Time.now - 1.day)..Time.now).pluck(:tempf)
+    @rain = WeatherDatum.where(created_at: (Time.now - 1.day)..Time.now).pluck(:rain)
+    @dailyRain = WeatherDatum.where(created_at: (Time.now - 1.day)..Time.now).pluck(:dailyRain)
+    @pressure = WeatherDatum.where(created_at: (Time.now - 1.day)..Time.now).pluck(:pressure)
   end
 
 # All variables

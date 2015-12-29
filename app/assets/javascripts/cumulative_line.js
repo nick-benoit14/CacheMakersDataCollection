@@ -5,7 +5,8 @@ $(document).ready(function(){
     console.log(Data);
 
     var counter = 0;
-    trans = [function(str){return ++counter;}]
+    trans = [function(str){return ++counter;}, function(){return counter % 20;}]
+
     formatData = DataFormater.format(Data, trans);
     console.log(formatData);
 

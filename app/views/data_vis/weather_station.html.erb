@@ -1,7 +1,11 @@
 
 
 <%= content_tag "div", id:"weatherdata", data:{"weatherdata":[
-  {"key":"Wind Direction","values":[@time, @wind_dir]}
+  {"key":"Wind Direction","values":[@time, @wind_dir]},
+  {"key":"Wind Speed","values":[@time, @wind_speed_mph]},
+  {"key":"Temperature","values":[@time, @tempf]},
+  {"key":"Precipitation","values":[@time, @rain]},
+  {"key":"Pressure","values":[@time, @pressure]}
 
     ]
   } do %>

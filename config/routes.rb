@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :weather_datum
 
   get '/home' => 'data_vis#home'
-  get '/weather_station' => 'data_vis#weather_station'
+  get '/WeatherStation' => 'data_vis#weather_station'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
