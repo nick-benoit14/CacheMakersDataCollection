@@ -4,6 +4,8 @@ class DataVisController < ApplicationController
   end
 
   def weather_station
+    @Data = WeatherDatum.getValues(0)
+    
     @all_data = WeatherDatum.all
     @time = WeatherDatum.where(created_at: (Time.now - 1.day)..Time.now).pluck(:created_at)
     @wind_dir = WeatherDatum.where(created_at: (Time.now - 1.day)..Time.now).pluck(:windDir)

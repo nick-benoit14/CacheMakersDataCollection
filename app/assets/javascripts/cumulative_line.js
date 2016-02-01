@@ -4,11 +4,11 @@ $(document).ready(function(){
     Data = $('#weatherdata').data('weatherdata');
     console.log(Data);
 
-    var counter = 0;
-    trans = [function(str){return ++counter;}, function(){return counter % 20;}]
-
-    formatData = DataFormater.format(Data, trans);
-    console.log(formatData);
+    // var counter = 0;
+    // trans = [function(str){return ++counter;}, function(){return counter % 20;}]
+    //
+    // formatData = DataFormater.format(Data, trans);
+    // console.log(formatData);
 
     // Wrapping in nv.addGraph allows for '0 timeout render', stores rendered charts in nv.graphs,
     // and may do more in the future... it's NOT required
@@ -33,7 +33,7 @@ $(document).ready(function(){
         chart.yAxis.tickFormat(d3.format(',.1%'));
 
         d3.select('#weather-graph svg')
-            .datum(formatData)
+            .datum(flatTestData())
             .call(chart);
 
         //TODO: Figure out a good way to do this automatically

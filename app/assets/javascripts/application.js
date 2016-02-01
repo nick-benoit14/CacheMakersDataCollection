@@ -18,7 +18,3 @@
 //= require nv.d3
 //= require DataFormater.js
 //= require cumulative_line.js
-
-$(document).ready(function(){
-
-});
